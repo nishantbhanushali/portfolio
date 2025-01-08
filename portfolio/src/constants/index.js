@@ -80,10 +80,7 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+   
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -104,69 +101,45 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+   
   ];
   
   const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
     {
       title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      company_name: "self-project",
+      date: " 22 nov 2024 - 30 nov 2024 ",
+      icon : reactjs,
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+       "using reactjs and bankend used moongose and made a paytm payment model",
+       "use can send payment and payment is debited from the accound and credited to the other accound ",
+       "and it is storing the information in backend and also the maded the login and signup pages authenitication using jwt"
+
       ],
     },
+    {
+      title: "React.js Developer",
+      company_name: "self-projects",
+      date: " 15 dec 2024  -  25 dec 2024",
+      icon : reactjs,
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "use canvas and made an pen tool and square and added different functionality with storke and color "
+      ],
+    },
+    {
+      title: "React  Developer",
+      company_name: "self-project",
+      date: " 5 jan 2025 - 10 jan 2025",
+      icon : reactjs,
+      points: [
+        "maded a porfolio website for myself and great animation with me and gpt  ",
+        "make the website responsive as possible ",
+        "use and learn technologies like framer and react three.js"
+      ],
+    },
+
   ];
   
   const testimonials = [
@@ -198,9 +171,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "payment model",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to send the money to each other  ",
       tags: [
         {
           name: "react",
@@ -216,49 +189,49 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/nishantbhanushali/paymentSystem",
     },
     {
-      name: "Job IT",
+      name: "white board",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        " a web application where user can draw and made shapes and fill color init",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "canvas",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "taiwind",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/nishantbhanushali/white-board-application",
     },
     {
-      name: "Trip Guide",
+      name: "portfolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+"simple portfolio with some 3d effect and animation",
       tags: [
         {
-          name: "nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "threejs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/nishantbhanushali/portfolio",
     },
   ];
   

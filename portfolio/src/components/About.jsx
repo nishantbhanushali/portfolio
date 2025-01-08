@@ -6,19 +6,32 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
-    <motion.div className="green-pink-gradient p-[1px] rounded-[20px]">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)} // Fade in from right
+      initial={{ opacity: 0, y: 20 }} // Start with opacity 0 and move up slightly
+      animate={{ opacity: 1, y: 0 }}  // End with full opacity and normal y position
+      transition={{
+        delay: index * 0.3, // Delayed animation per card
+        duration: 0.75, // Animation duration for smooth transition
+        ease: "easeOut", // Easing function for smoothness
+      }}
+      whileHover={{ scale: 1.1 }} // Scale up on hover
+      whileTap={{ scale: 0.95 }}   // Slight scale down on tap
+      className="green-pink-gradient p-[1px] rounded-[20px] transition-all"
+    >
       <div
+        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         options={{
           max: 180,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
-        <img
+        <motion.img
           src={icon}
-          alt="web-development"
+          alt={title}
           className="w-16 h-16 object-contain"
+          whileHover={{ rotate: 360 }} // Rotation effect on hover
         />
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
@@ -28,8 +41,10 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
+
 const About = () => {
   return (
+
     <div className="min-h-screen flex flex-col justify-center items-center">
       <motion.div
         variants={textVariant()}
@@ -59,6 +74,7 @@ const About = () => {
         ))}
       </div>
     </div>
+   
   );
 };
 
